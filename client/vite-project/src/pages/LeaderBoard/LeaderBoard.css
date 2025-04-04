@@ -1,0 +1,74 @@
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    /* background: white; */
+    padding: 40px;
+    padding-top: 0;
+    border-radius: 15px;
+    /* box-shadow: 0px 10px 30px rgba(106, 27, 154, 0.2); */
+    text-align: center;
+    margin: 50px auto;
+}
+h1 {
+    color: #6a1b9a;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.leaderboard {
+    list-style: none;
+    padding: 0;
+}
+.leaderboard li {
+    background: #7b00ffcd;
+    color: white;
+    padding: 20px 25px;
+    margin: 15px 0;
+    border-radius: 12px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 6px 15px rgba(106, 27, 154, 0.3);
+}
+.leaderboard li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(106, 27, 154, 0.4);
+}
+.leaderboard .rank {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d1c4e9;
+}
+.leaderboard .details {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 15px;
+}
+.leaderboard .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+.leaderboard .location {
+    font-size: 16px;
+    color: #d1c4e9;
+}
+.leaderboard .donation {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffccbc;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .leaderboard li {
+        flex-direction: column;
+        text-align: center;
+    }
+    .leaderboard .details {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
